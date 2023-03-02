@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/k_res_0x7f0400b5"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/b_res_0x7f040003" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/faintTextBackgroundColor"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="General"
+                    android:textColor="?attr/faintTextColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/themeChooserContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Themes"
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:foreground="?attr/faintTextBackgroundColor" />
+
+                <TextView
+                    android:id="@+id/preview_image_quality_tx"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Preview Image Quality"
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:foreground="?attr/faintTextBackgroundColor" />
+
+                <LinearLayout
+                    android:id="@+id/autoSave_Image_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="Image Auto Save"
+                        android:textColor="?attr/textColor"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/autoSave_Image_toggle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:clickable="false"
+                        android:textColor="?attr/textColor"
+                        android:theme="@style/SCBSwitch" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/faintTextBackgroundColor"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Notifications"
+                android:textColor="?attr/faintTextColor"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/main_nottificaion_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:gravity="center_vertical"
+                        android:text="Notifications"
+                        android:textColor="?attr/textColor"
+                        android:textSize="20sp" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/main_notification_toggle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:clickable="false"
+                        android:textColor="?attr/textColor"
+                        android:theme="@style/SCBSwitch" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:foreground="?attr/faintTextBackgroundColor" />
+
+                <LinearLayout
+                    android:id="@+id/daily_weekly_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/daily_notification_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:gravity="center_vertical"
+                            android:text="Daily Notification"
+                            android:textColor="?attr/textColor"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/daily_notification_toggle"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:clickable="false"
+                            android:textColor="?attr/textColor"
+                            android:theme="@style/SCBSwitch" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:foreground="?attr/faintTextBackgroundColor" />
+
+                    <LinearLayout
+                        android:id="@+id/weekly_notification_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:gravity="center_vertical"
+                            android:text="Weekly Notification"
+                            android:textColor="?attr/textColor"
+                            android:textSize="16sp" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/weekly_notification_toggle"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:clickable="false"
+                            android:textColor="?attr/textColor"
+                            android:theme="@style/SCBSwitch" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/faintTextBackgroundColor"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Sounds"
+                android:textColor="?attr/faintTextColor"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/nottificaion_sound_container"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:text="Notification Sound"
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/notification_sound_toggle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:clickable="false"
+                    android:textColor="?attr/textColor"
+                    android:theme="@style/SCBSwitch" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/faintTextBackgroundColor"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Vibrations"
+                android:textColor="?attr/faintTextColor"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/nottificaion_vibrate_container"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:text="Notification Vibration"
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/notification_vibrate_toggle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:clickable="false"
+                    android:theme="@style/SCBSwitch" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/faintTextBackgroundColor"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Caches and Data"
+                android:textColor="?attr/faintTextColor"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/cachecontainer"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Clear Cache"
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4">
+
+                    <TextView
+                        android:id="@+id/clearcache"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Cache Size:"
+                        android:textColor="?attr/textColor" />
+
+                    <TextView
+                        android:id="@+id/cachesize_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/clearcache"
+                        android:layout_toRightOf="@+id/clearcache"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:textColor="?attr/textColor" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:foreground="?attr/faintTextBackgroundColor" />
+
+            <LinearLayout
+                android:id="@+id/clearcache_on_exit_container"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:text="Clear Cache on Exit"
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/clearcache_on_exit_toggle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:clickable="false"
+                    android:theme="@style/SCBSwitch" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:foreground="?attr/faintTextBackgroundColor" />
+
+            <LinearLayout
+                android:id="@+id/cleardatabasecontainer"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Clear Data"
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingStart="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Clearing Data will Reload All Data from Server"
+                        android:textColor="?attr/textColor" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/personalise_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/faintTextBackgroundColor"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Personalise"
+                android:textColor="?attr/faintTextColor"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/personalise_pref_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center_vertical"
+                    android:text="Set Preferences"
+                    android:textColor="?attr/textColor"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/k_res_0x7f0400b5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <hd.uhd.amoled.wallpapers.best.quality.customviewpager.CustomViewPager android:id="@+id/image_viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/container"/>
+    <View android:focusable="false" android:layout_width="match_parent" android:layout_height="60dp" android:foreground="@drawable/title_gradient" android:layout_alignParentTop="true"/>
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ImageViewActivityToolBarStyle" android:id="@+id/toolbar" android:background="#0000" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/b_res_0x7f040003">
+        <ImageView android:layout_gravity="end|center_vertical" android:id="@+id/iv_favorite" android:paddingTop="6dp" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="10dp" android:src="@drawable/ic_menu_favorite" android:layout_marginEnd="10dp"/>
+        <ImageView android:layout_gravity="end|center_vertical" android:id="@+id/iv_quality_alert_info" android:paddingTop="6dp" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="10dp" android:src="@drawable/ic_menu_warning_image_display_activity" android:onClick="openInfoAlerDialog" android:layout_marginEnd="10dp"/>
+        <ImageView android:layout_gravity="end|center_vertical" android:id="@+id/iv_rewarded_ads" android:paddingTop="6dp" android:visibility="visible" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginRight="10dp" android:src="@drawable/no_ads" android:layout_marginEnd="10dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <include layout="@layout/fab_layout"/>
+    <ImageView android:id="@+id/floating_share" android:background="@drawable/round_button" android:padding="12dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="22dp" android:layout_marginRight="22dp" android:layout_marginBottom="30dp" android:src="@drawable/ic_menu_share_fab" android:layout_above="@+id/container"/>
+    <ImageView android:id="@+id/floating_setas" android:background="@drawable/round_button" android:padding="20dp" android:layout_width="68dp" android:layout_height="68dp" android:layout_margin="25dp" android:src="@drawable/ic_menu_setas" android:layout_above="@+id/container" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:id="@+id/container" android:background="?attr/k_res_0x7f0400b5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@+id/adViewContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_relative" android:background="?attr/k_res_0x7f0400b5" android:layout_width="match_parent" android:layout_height="440dp">
+    <ImageView android:id="@+id/logo_holder" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/logo_bnw" android:layout_centerInParent="true"/>
+    <TextView android:textSize="26sp" android:textStyle="bold" android:textColor="?attr/faintTextColor" android:gravity="center" android:id="@+id/tx_loading_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LOADING" android:layout_below="@+id/logo_holder" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/grid_image_small" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+</RelativeLayout>

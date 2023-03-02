@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#fff" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#000" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Choose Theme"/>
+    <LinearLayout android:orientation="vertical" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/theme_white_button" android:background="@drawable/theme_button_white" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_black_button" android:background="@drawable/theme_button_black" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_black_blue_button" android:background="@drawable/theme_button_black_blue" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_dark_grey_button" android:background="@drawable/theme_button_dark_grey" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="75dp">
+            <Button android:id="@+id/theme_blue_grey_button" android:background="@drawable/theme_button_blue_grey" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_brown_button" android:background="@drawable/theme_button_brown" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_teal_button" android:background="@drawable/theme_button_teal" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_blue_button" android:background="@drawable/theme_button_blue" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="75dp" android:weightSum="5">
+            <Button android:id="@+id/theme_cyan_button" android:background="@drawable/theme_button_cyan" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_indigo_button" android:background="@drawable/theme_button_indigo" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_yellow_button" android:background="@drawable/theme_button_yellow" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_orange_button" android:background="@drawable/theme_button_orange" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="75dp">
+            <Button android:id="@+id/theme_deep_orange_button" android:background="@drawable/theme_button_deep_orange" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_red_button" android:background="@drawable/theme_button_red" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_dark_red_button" android:background="@drawable/theme_button_dark_red" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+            <Button android:id="@+id/theme_pink_button" android:background="@drawable/theme_button_pink" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

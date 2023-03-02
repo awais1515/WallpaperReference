@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:weightSum="100">
+    <ImageView android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ic_menu_folder" android:layout_weight="15"/>
+    <TextView android:textSize="15sp" android:textColor="?attr/textColor" android:gravity="center_vertical" android:id="@+id/view_path_tx" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="70"/>
+    <ImageView android:id="@+id/view_delete_option" android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ic_menu_delete_sweep" android:layout_weight="15"/>
+</LinearLayout>

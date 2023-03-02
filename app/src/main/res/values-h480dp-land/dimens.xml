@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="j_res_0x7f0700cb">0dp</dimen>
+    <dimen name="mtrl_calendar_day_corner">22dp</dimen>
+    <dimen name="l_res_0x7f0700ce">48dp</dimen>
+    <dimen name="m">48dp</dimen>
+    <dimen name="mtrl_calendar_landscape_header_width">168dp</dimen>
+    <dimen name="p">0dp</dimen>
+</resources>

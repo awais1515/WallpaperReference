@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/k_res_0x7f0400b5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/b_res_0x7f040003" android:layout_alignParentTop="true" layout="@layout/toolbar_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="12sp" android:textColor="?attr/faintTextColor" android:gravity="center" android:id="@+id/tx_folder_location" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="?attr/faintTextBackgroundColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="5dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/time_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textStyle="bold" android:textColor="?attr/k_res_0x7f0400b5" android:layout_gravity="center" android:id="@+id/tx_autowallpaperchanger" android:background="?attr/textColor" android:padding="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Set Auto Wallpaper Changer"/>
+                <TextView android:textColor="?attr/textColor" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Time Duration:"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/spinner"/>
+                </RelativeLayout>
+                <TextView android:textStyle="bold" android:textColor="?attr/k_res_0x7f0400b5" android:layout_gravity="center" android:id="@+id/tx_time" android:background="?attr/textColor" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open Time Picker" android:onClick="open_time_selector_dialog"/>
+                <TextView android:textStyle="bold" android:textColor="?attr/k_res_0x7f0400b5" android:layout_gravity="center" android:id="@+id/tx_time_of_day" android:background="?attr/textColor" android:padding="20dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open Time of the Day Picker" android:onClick="open_time_of_day_time_picker"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/blur_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textColor="?attr/textColor" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Blur Intensity:"/>
+                <TextView android:textStyle="bold" android:textColor="?attr/k_res_0x7f0400b5" android:layout_gravity="center" android:id="@+id/tx_blur" android:background="?attr/textColor" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Off" android:onClick="open_blur_intensity_dialog"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/darken_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textColor="?attr/textColor" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Darken Wallpaper Intensity:"/>
+                <TextView android:textStyle="bold" android:textColor="?attr/k_res_0x7f0400b5" android:layout_gravity="center" android:id="@+id/tx_darken" android:background="?attr/textColor" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Off" android:onClick="open_darken_wallpaper_intensity_dialog"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/tx_skip_current_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                <TextView android:textStyle="bold" android:textColor="?attr/k_res_0x7f0400b5" android:layout_gravity="center" android:background="?attr/textColor" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Skip Current Wallpaper" android:textAllCaps="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:weightSum="2" android:onClick="onRandomiseToggleClicked">
+                <TextView android:textSize="18sp" android:textColor="?attr/textColor" android:gravity="end" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Randomize :" android:layout_weight="1"/>
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/SCBSwitch" android:textColor="?attr/textColor" android:id="@+id/randomise_toggle" android:padding="5dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:weightSum="2" android:onClick="onDoubleTapToggleClicked">
+                <TextView android:textSize="16sp" android:textColor="?attr/textColor" android:gravity="end" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Double Tap to Change Wallpaper :" android:layout_weight="1"/>
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/SCBSwitch" android:textColor="?attr/textColor" android:id="@+id/double_tap_toggle" android:padding="5dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:weightSum="2" android:onClick="onLongPressToggleClicked">
+                <TextView android:textSize="16sp" android:textColor="?attr/textColor" android:gravity="end" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Long Press to Change Wallpaper :" android:layout_weight="1"/>
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/SCBSwitch" android:textColor="?attr/textColor" android:id="@+id/long_press_toggle" android:padding="5dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:weightSum="2" android:onClick="onAnimateWallpaperChangeToggleClicked">
+                <TextView android:textSize="16sp" android:textColor="?attr/textColor" android:gravity="end" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Animate Wallpaper Change :" android:layout_weight="1"/>
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/SCBSwitch" android:textColor="?attr/textColor" android:id="@+id/animate_wallpaper_change_toggle" android:padding="5dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="20dp">
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:foreground="?attr/faintTextColor" android:layout_centerVertical="true"/>
+                <TextView android:textColor="?attr/faintTextColor" android:gravity="center" android:background="?attr/k_res_0x7f0400b5" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Premium Features" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/enable_disable_auto_download_container" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="60dp" android:weightSum="10" android:paddingStart="10dp" android:paddingEnd="10dp">
+                <TableLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="9" android:layout_weight="8">
+                    <TextView android:textSize="16sp" android:textColor="?attr/textColor" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0dp" android:text="Auto Download Wallpaper" android:layout_weight="5"/>
+                    <TextView android:textSize="12sp" android:textColor="?attr/faintTextColor" android:layout_width="wrap_content" android:layout_height="0dp" android:text="Automatically Downloads Images over Internet" android:layout_weight="4"/>
+                </TableLayout>
+                <androidx.appcompat.widget.SwitchCompat android:theme="@style/SCBSwitch" android:textColor="?attr/textColor" android:layout_gravity="center_vertical" android:id="@+id/auto_download_enable_disable_toggle" android:clickable="false" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:foreground="?attr/faintTextBackgroundColor"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/main_categories_selection_container" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="60dp" android:weightSum="9" android:paddingStart="10dp" android:paddingEnd="10dp">
+                <TextView android:textSize="16sp" android:textColor="?attr/textColor" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0dp" android:text="Categories and Options" android:layout_weight="5"/>
+                <TextView android:textSize="12sp" android:textColor="?attr/faintTextColor" android:layout_width="wrap_content" android:layout_height="0dp" android:text="Select Categories and Options" android:layout_weight="4"/>
+            </LinearLayout>
+            <View android:background="?attr/faintTextBackgroundColor" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+            <TextView android:textColor="?attr/faintTextColor" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="Custom Folders"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/border_disclaimer" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16sp" android:textColor="?attr/textColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Selected Folders:"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/ic_menu_clear_all" android:onClick="clearAllStorageDirectories" android:layout_marginEnd="15dp"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/ic_menu_add" android:onClick="getStorageDirectories" android:layout_marginEnd="15dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:background="?attr/faintTextBackgroundColor" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_margin="5dp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview_folders_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp"/>
+                <View android:background="?attr/faintTextBackgroundColor" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_margin="5dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+                    <TextView android:textSize="16sp" android:textColor="?attr/textColor" android:gravity="end" android:layout_gravity="center_vertical" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Include Subfolders:"/>
+                    <androidx.appcompat.widget.SwitchCompat android:theme="@style/SCBSwitch" android:textColor="?attr/textColor" android:layout_gravity="center_vertical" android:id="@+id/sub_directories_toggle" android:paddingLeft="10dp" android:paddingRight="15dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="15dp"/>
+                    <TextView android:textStyle="bold" android:textColor="?attr/k_res_0x7f0400b5" android:gravity="center" android:layout_gravity="center_vertical" android:background="?attr/textColor" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add App&apos;s Default Folder" android:onClick="addAppDefaultDirectory"/>
+                </LinearLayout>
+                <View android:background="?attr/faintTextBackgroundColor" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_margin="5dp"/>
+                <TextView android:textColor="?attr/faintTextColor" android:gravity="center" android:id="@+id/tx_no_internal_storage_visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+            <TextView android:textColor="?attr/faintTextColor" android:gravity="center" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/auto_changer_notice"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

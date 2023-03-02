@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_drawer" android:background="?attr/k_res_0x7f0400b5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/c_res_0x7f09007b" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/container">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:layout_behavior="hd.uhd.amoled.wallpapers.best.quality.utils.FixAppBarLayoutBehavior">
+                <include android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/b_res_0x7f040003" app:layout_scrollFlags="0x5" layout="@layout/toolbar_layout"/>
+            </com.google.android.material.appbar.AppBarLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/view_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                <TextView android:typeface="monospace" android:textColor="#ffff" android:gravity="center" android:id="@+id/trend_sortname_cat_name" android:background="#0000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp" android:layout_alignParentBottom="false"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/no_favorite_section" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:layout_width="300dp" android:layout_height="150dp" android:src="@drawable/ic_menu_broken_heart"/>
+                    <TextView android:textStyle="bold" android:textColor="?attr/faintTextColor" android:gravity="center" android:layout_width="300dp" android:layout_height="wrap_content" android:text="No Favorites Yet! \10Build your own Favorite list by clicking Heart Button at the Top Right Corner."/>
+                </LinearLayout>
+                <ScrollView android:id="@+id/disclaimer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/image_logo" android:layout_width="150dp" android:layout_height="150dp" android:layout_margin="10dp" android:src="@drawable/splash_img" android:layout_centerHorizontal="true"/>
+                        <TextView android:textColor="?attr/faintTextColor" android:id="@+id/version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_below="@+id/image_logo" android:layout_centerHorizontal="true"/>
+                        <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="?attr/textColor" android:gravity="center" android:id="@+id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@+id/version_name" android:layout_centerHorizontal="true" android:textAllCaps="true"/>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/pro_disc" android:background="@drawable/border_disclaimer" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:layout_below="@+id/app_name">
+                            <TextView android:textColor="?attr/faintTextColor" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pro Version"/>
+                            <TextView android:textSize="14sp" android:textColor="?attr/textColor" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/disclaimer_pro_info"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/disc" android:background="@drawable/border_disclaimer" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:layout_below="@+id/pro_disc">
+                            <TextView android:textColor="?attr/faintTextColor" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Disclaimer"/>
+                            <TextView android:textSize="14sp" android:textColor="?attr/textColor" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/disclaimer_info"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="100dp" android:weightSum="2" android:layout_below="@+id/disc">
+                            <TextView android:textStyle="bold" android:textColor="?attr/textColor" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Privacy Policy" android:layout_weight="2" android:onClick="openpolicies"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <RelativeLayout android:id="@+id/container" android:background="?attr/k_res_0x7f0400b5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@+id/adViewContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:layout_gravity="start" android:layout_width="340dp" android:layout_height="match_parent" layout="@layout/nav_view"/>
+</androidx.drawerlayout.widget.DrawerLayout>

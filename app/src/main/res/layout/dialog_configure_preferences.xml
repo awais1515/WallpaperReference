@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#fff" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Configure the preferences to personalize the experience"/>
+    <TextView android:textSize="10sp" android:textColor="#0000" android:gravity="center" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="(swipe down to close)"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <TableLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="8">
+            <TextView android:textSize="16sp" android:textColor="#000" android:gravity="center_vertical" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Unity Ads"/>
+            <TextView android:textSize="12sp" android:textColor="#0000" android:id="@+id/tx_unity_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </TableLayout>
+        <androidx.appcompat.widget.SwitchCompat android:theme="@style/SCBSwitchWhiteBG" android:layout_gravity="center_vertical" android:id="@+id/unity_toggle" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.V26.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat">
+        <item name="colorError">?android:attr/colorError</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light">
+        <item name="colorError">?android:attr/colorError</item>
+    </style>
+    <style name="Base.V26.Widget.AppCompat.Toolbar" parent="@style/Base.V7.Widget.AppCompat.Toolbar">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Toolbar" parent="@style/Base.V26.Widget.AppCompat.Toolbar">
+    </style>
+    <style name="OrangeTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:navigationBarColor">#ff9800</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#ff9800</item>
+        <item name="colorPrimaryDark">#ff9800</item>
+        <item name="faintTextBackgroundColor">#0000</item>
+        <item name="faintTextColor">#0000</item>
+        <item name="faintToolbarIconColor">#0000</item>
+        <item name="floatingActionButtonBackgroundColor">#55ff9800</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66ff9800</item>
+        <item name="floatingActionButtonColor">#fff</item>
+        <item name="textColor">#000</item>
+        <item name="toolbarIconColor">#000</item>
+    </style>
+    <style name="WhiteTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:navigationBarColor">#000</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#fff</item>
+        <item name="colorPrimaryDark">#fff</item>
+        <item name="faintTextBackgroundColor">#0000</item>
+        <item name="faintTextColor">#0000</item>
+        <item name="faintToolbarIconColor">#0000</item>
+        <item name="floatingActionButtonBackgroundColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#ffff</item>
+        <item name="floatingActionButtonColor">#fff</item>
+        <item name="textColor">#000</item>
+        <item name="toolbarIconColor">#000</item>
+    </style>
+    <style name="d_res_0x7f120286" parent="@android:style/Widget">
+        <item name="android:background">?attr/k_res_0x7f0400b5</item>
+        <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="YellowTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:navigationBarColor">#ffeb3b</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#ffeb3b</item>
+        <item name="colorPrimaryDark">#ffeb3b</item>
+        <item name="faintTextBackgroundColor">#0000</item>
+        <item name="faintTextColor">#0000</item>
+        <item name="faintToolbarIconColor">#0000</item>
+        <item name="floatingActionButtonBackgroundColor">#55ffeb3b</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66ffeb3b</item>
+        <item name="floatingActionButtonColor">#fff</item>
+        <item name="textColor">#000</item>
+        <item name="toolbarIconColor">#000</item>
+    </style>
+</resources>

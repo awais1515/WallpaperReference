@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Inverse" parent="@android:style/TextAppearance.Material.Widget.Button.Inverse">
+    </style>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
+        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:attr/actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:attr/actionMenuTextColor</item>
+        <item name="k_res_0x7f04001d">?android:attr/actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:attr/ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:attr/ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:attr/actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:attr/actionMenuTextColor</item>
+        <item name="k_res_0x7f04001d">?android:attr/actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:attr/ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:attr/ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ActionButton.Overflow" parent="@android:style/Widget.Material.ActionButton.Overflow">
+    </style>
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored">
+    </style>
+    <style name="Base.Widget.AppCompat.Button.Colored" parent="@android:style/Widget.Material.Button.Colored">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.Button.Colored</item>
+    </style>
+    <style name="Base.Widget.AppCompat.EditText" parent="@android:style/Widget.Material.EditText">
+        <item name="android:breakStrategy">@null</item>
+        <item name="android:hyphenationFrequency">@null</item>
+    </style>
+    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="@android:style/Widget.Material.RatingBar.Indicator">
+    </style>
+    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="@android:style/Widget.Material.RatingBar.Small">
+    </style>
+    <style name="Base.Widget.AppCompat.Spinner.Underlined" parent="@android:style/Widget.Material.Spinner.Underlined">
+    </style>
+    <style name="Base.Widget.AppCompat.TextView" parent="@android:style/Widget.Material.TextView">
+        <item name="android:breakStrategy">high_quality</item>
+        <item name="android:hyphenationFrequency">@null</item>
+    </style>
+    <style name="BlackBlueTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#001624</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#001624</item>
+        <item name="colorPrimaryDark">#001624</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#55001624</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66001624</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="BlackTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#000</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#000</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#0000</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#0000</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="BlueGreyTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#566e7a</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#566e7a</item>
+        <item name="colorPrimaryDark">#566e7a</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#55607d8b</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66607d8b</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="BlueTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#1976d2</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#1976d2</item>
+        <item name="colorPrimaryDark">#1976d2</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#552196f3</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#662196f3</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="BrownTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#795548</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#795548</item>
+        <item name="colorPrimaryDark">#795548</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#55795548</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66795548</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="CardView" parent="@style/Base.CardView">
+        <item name="cardBackgroundColor">?android:attr/colorBackgroundFloating</item>
+    </style>
+    <style name="CyanTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#00acc1</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#00acc1</item>
+        <item name="colorPrimaryDark">#00acc1</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#5500bcd4</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#6600bcd4</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="DarkGreyTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#11242c</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#11242c</item>
+        <item name="colorPrimaryDark">#11242c</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#55273238</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66273238</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="DarkRedTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#7b161f</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#7b161f</item>
+        <item name="colorPrimaryDark">#7b161f</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#557b161f</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#667b161f</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="DeepOrangeTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#f4511e</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#f4511e</item>
+        <item name="colorPrimaryDark">#f4511e</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#55f4511e</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66f4511e</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="GreyTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#757575</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#757575</item>
+        <item name="colorPrimaryDark">#757575</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#55607d8b</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66607d8b</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="IndigoTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#3f51b5</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#3f51b5</item>
+        <item name="colorPrimaryDark">#3f51b5</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#553f51b5</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#663f51b5</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="LightBlueTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#039be5</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#039be5</item>
+        <item name="colorPrimaryDark">#039be5</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#5503a9f4</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#6603a9f4</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="OrangeTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#000</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#ff9800</item>
+        <item name="colorPrimaryDark">#ff9800</item>
+        <item name="faintTextBackgroundColor">#0000</item>
+        <item name="faintTextColor">#0000</item>
+        <item name="faintToolbarIconColor">#0000</item>
+        <item name="floatingActionButtonBackgroundColor">#55ff9800</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66ff9800</item>
+        <item name="floatingActionButtonColor">#fff</item>
+        <item name="textColor">#000</item>
+        <item name="toolbarIconColor">#000</item>
+    </style>
+    <style name="PinkTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#d81b60</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#d81b60</item>
+        <item name="colorPrimaryDark">#d81b60</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#55d81b60</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66d81b60</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="RedTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#e53935</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#e53935</item>
+        <item name="colorPrimaryDark">#e53935</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#55e53935</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66e53935</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="TealTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#00897b</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#00897b</item>
+        <item name="colorPrimaryDark">#00897b</item>
+        <item name="faintTextBackgroundColor">#ffff</item>
+        <item name="faintTextColor">#ffff</item>
+        <item name="faintToolbarIconColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColor">#5500897b</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#6600897b</item>
+        <item name="floatingActionButtonColor">#ffff</item>
+        <item name="textColor">#fff</item>
+        <item name="toolbarIconColor">#fff</item>
+    </style>
+    <style name="WhiteTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#000</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#fff</item>
+        <item name="colorPrimaryDark">#fff</item>
+        <item name="faintTextBackgroundColor">#0000</item>
+        <item name="faintTextColor">#0000</item>
+        <item name="faintToolbarIconColor">#0000</item>
+        <item name="floatingActionButtonBackgroundColor">#ffff</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#ffff</item>
+        <item name="floatingActionButtonColor">#fff</item>
+        <item name="textColor">#000</item>
+        <item name="toolbarIconColor">#000</item>
+    </style>
+    <style name="Widget.MaterialComponents.PopupMenu.ContextMenu" parent="@style/Base.Widget.MaterialComponents.PopupMenu.ContextMenu">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
+    <style name="Widget.MaterialComponents.PopupMenu.ListPopupWindow" parent="@style/Base.Widget.MaterialComponents.PopupMenu.ListPopupWindow">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
+    <style name="YellowTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/windowAnimationTransition</item>
+        <item name="android:navigationBarColor">#000</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">#ff4081</item>
+        <item name="k_res_0x7f0400b5">#ffeb3b</item>
+        <item name="colorPrimaryDark">#ffeb3b</item>
+        <item name="faintTextBackgroundColor">#0000</item>
+        <item name="faintTextColor">#0000</item>
+        <item name="faintToolbarIconColor">#0000</item>
+        <item name="floatingActionButtonBackgroundColor">#55ffeb3b</item>
+        <item name="floatingActionButtonBackgroundColorPressed">#66ffeb3b</item>
+        <item name="floatingActionButtonColor">#fff</item>
+        <item name="textColor">#000</item>
+        <item name="toolbarIconColor">#000</item>
+    </style>
+</resources>
